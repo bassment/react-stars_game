@@ -1,6 +1,7 @@
-@NumberFrame = React.createClass
+@NumbersFrame = React.createClass
   render: ->
     selectedNumbers = @props.selectedNumbers
+    usedNumbers = @props.usedNumbers
     selectNumber = @props.selectNumber
 
     React.DOM.div
@@ -9,7 +10,8 @@
         className: 'well'
 
         for num in [1..9]
-          className = 'number selected-' + (selectedNumbers.indexOf(num) >= 0)
+          className = 'number selected-' + _.contains(selectedNumbers, num)
+          className += ' used-' + _.contains(usedNumbers, num)
           React.DOM.div
             key: num
             className: className
