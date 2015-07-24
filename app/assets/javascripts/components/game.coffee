@@ -3,7 +3,7 @@
     numberOfStars: @randomNumber()
     selectedNumbers: []
     usedNumbers: []
-    redraws: 25
+    redraws: 7
     correct: null
     doneStatus: null
     clock: {}
