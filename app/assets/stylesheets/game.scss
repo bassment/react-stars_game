@@ -1,6 +1,23 @@
-#stars-frame .glyphicon {
-  margin: 0.3em;
-  font-size: 1.75em;
+@mixin info-icon {
+  position: absolute;
+  font-size: 1.25em;
+  right: 0;
+  cursor: pointer;
+}
+
+#answer-frame, #stars-frame, #numbers-frame {
+  position: relative;
+
+  .glyphicon-info-sign {
+    @include info-icon
+  }
+}
+
+#stars-frame {
+  .glyphicon-star {
+    margin: 0.3em;
+    font-size: 1.75em;
+  }
 }
 
 #stars-frame, #answer-frame {
@@ -19,7 +36,7 @@
   height: 200px;
 }
 
-#numbers-frame .number, #answer-frame .well span {
+#numbers-frame .number, #answer-frame .well .number {
   display: inline-block;
   margin: 0.5em;
   background-color: #bbb;

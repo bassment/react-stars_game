@@ -7,7 +7,7 @@
         button =
           React.DOM.button
             className: 'btn btn-success btn-lg'
-            onClick: @props.acceptAnswer
+            onClick: @props.acceptAnswerAndStartTimer
             React.DOM.span
               className: 'glyphicon glyphicon-ok'
 

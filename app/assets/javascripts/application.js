@@ -11,8 +11,10 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
 //= require jquery_ujs
+//= require qtip2-jquery-rails
+//= require bootstrap-sprockets
+//= require flipclock.min
 //= require turbolinks
 //= require underscore
 //= require react

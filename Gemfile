@@ -51,3 +51,5 @@ end
 gem 'react-rails'
 gem 'bootstrap-sass'
 gem 'underscore-rails'
+gem 'qtip2-jquery-rails', '~> 2.2.100'
+gem 'flipclockjs-rails', '~> 0.5.5.1'

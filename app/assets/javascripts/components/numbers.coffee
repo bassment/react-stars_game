@@ -17,3 +17,6 @@
             className: className
             onClick: selectNumber.bind(null, num)
             num
+        React.DOM.span
+          onMouseEnter: @props.clickIcon
+          className: 'glyphicon glyphicon-info-sign'

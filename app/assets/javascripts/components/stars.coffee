@@ -8,3 +8,6 @@
           React.DOM.span
             key: num
             className: 'glyphicon glyphicon-star'
+        React.DOM.span
+          onMouseEnter: @props.clickIcon
+          className: 'glyphicon glyphicon-info-sign'
