@@ -188,6 +188,7 @@
         React.createElement Timer
       else
         ''
+      React.DOM.br null
 
       React.DOM.div
         className: 'clearfix'
